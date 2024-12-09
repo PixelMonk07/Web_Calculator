@@ -1,0 +1,131 @@
+/* General reset for consistent styling across browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #704456, #250340);
+}
+/* Backspace Button */
+.btn-backspace {
+  background: #ffcccb;
+  color: #333;
+}
+
+/* Percentage Button */
+.btn-percentage {
+  background: #bae1ff;
+  color: #333;
+}
+
+/* Main calculator container */
+.calculator {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Display screen */
+.calculator-screen {
+  background: #222;
+  color: #fff;
+  font-size: 2rem;
+  text-align: right;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  overflow: hidden;
+  border: 2px solid #444;
+  box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button container styles */
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+/* General button styles */
+button {
+  background: #f3f3f3;
+  font-size: 1.5rem;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Number buttons */
+.btn-number {
+  background: #e8f4ff;
+  color: #333;
+}
+
+/* Operator buttons */
+.btn-operator {
+  background: #ffd166;
+  color: #222;
+}
+
+/* Clear button */
+.btn-clear {
+  background: #ef476f;
+  color: white;
+}
+
+/* Equals button */
+.btn-equals {
+  background: #06d6a0;
+  color: white;
+  grid-column: span 2;
+}
+
+/* Dot button */
+.btn-dot {
+  background: #ffc7a1;
+}
+
+/* Button hover and active states */
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media screen and (max-width: 400px) {
+  .calculator {
+    width: 90%;
+  }
+
+  button {
+    font-size: 1.2rem;
+    padding: 12px;
+  }
+
+  .calculator-screen {
+    font-size: 1.5rem;
+  }
+}
